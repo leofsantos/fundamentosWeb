@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book</title>
-</head>
-<body>
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
-        <li>
-            <a href="book.html"> Book your tour </a>
-        </li>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="background">
+    <ul id="menu">
+      <li>
+        <a href="index.html"> Home </a>
+      </li>
+      <li>
+        <a href="tour.html"> Agende seu tour </a>
+      </li>
     </ul>
-    
-    <h1>Book your walking tour</h1>
-    <form>
-        <label for="name">Name:</label><br />
+
+    <h1 class="center font1">Book your walking tour</h1>
+    <div class="container">
+      <div class="p-30 font1">
+        <form class="form">
+          <label for="name">Name:</label><br />
           <input type="text" id="name" />
           <br />
           <br />
@@ -39,22 +42,22 @@
           <input type="date" id="date" />
           <br />
           <br />
-          <label for="suggestions">Suggestions:</label><br />
-          <textarea 
-            name="suggestions" 
-            id="suggestions" 
+          <label for="observations">Observations:</label><br />
+          <textarea
+            name="observations"
+            id="observations"
             cols="30"
             rows="5"
-            ></textarea>
+          ></textarea>
           <br />
           <br />
           <button>Send</button>
-    </form>
-
-    <h2>Where our tour begins</h2>
-    <p>Barão de Rodrigues Mendes St., 5</p>
-        <p>Ponto de referência: Paço do Frevo</p>
-
+        </form>
+      </div>
+      <div class="font1">
+        <h2>Where our tour begins</h2>
+        <p>Barão de Rodrigues Mendes St., 5</p>
+        <p>Reference point: Right in front of Paço do Frevo museum</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.
           4679780398363!2d-34.87210688467129!3d-8.061261769171344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
@@ -68,5 +71,33 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-</body>
+      </div>
+    </div>
+    <footer class="center">
+        <div class="container">
+          <a href="https://www.instagram.com/malsucedido/" target="_blank">
+            <img
+              class="logo p-30"
+              src="assets/img/instagram-logo.png"
+              alt="Logo do Instagram"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/leonardo-fs/" target="_blank">
+            <img
+              class="logo p-30"
+              src="assets/img/linkedin-logo.png"
+              alt="Logo do Linkedin"
+            />
+          </a>
+          <a href="https://github.com/leofsantos" target="_blank">
+            <img
+              class="logo p-30"
+              src="assets/img/github-logo.png"
+              alt="Logo do Github"
+            />
+          </a>
+        </div>
+        <p>Todos os direitos reservados: Leonardo dos Santos &copy;</p>
+      </footer>
+  </body>
 </html>
